@@ -1,0 +1,13 @@
+name: RiotGuilds
+version: '${project.version}'
+main: me.darkwinged.RiotGuilds.Main
+api-version: 1.18
+authors: [ darkwinged ]
+depend: [Vault, ProtocolLib, GriefPrevention]
+commands:
+  guild:
+    aliases:
+      - guilds
+      - clan
+      - clans
+    description: Allows players to view guilds

@@ -1,0 +1,160 @@
+#######################################################################################
+#
+#       Welcome to Riot Polls configuration, This is where you can change
+#       Basic settings that will affect how the plugin preforms.
+#       This plugin does have database support; see 'Storage' for more information.
+#
+#######################################################################################
+
+Storage:
+  # Visit 'Plugins/RiotPolls/Lang/' to see the supported languages.
+  Language File: "en_US"
+
+guild-inventory:
+  title: "&aGuilds"
+  size: 54
+  guild-gui-item:
+    # Will be replaced with owner of the guilds head.
+    item: PLAYER_HEAD
+    name: "&e%guild_name%"
+    lore:
+      - "&7Owner: &c%owner%"
+      - "&7Members: &f%members%"
+      - ""
+      - "&7Worth: &2$%amount%"
+      - "&7Kills: &f%kills%"
+      - "&7Status: %open%"
+      - ""
+      - "&eClick to join!"
+  contents:
+    1:
+      item: BLACK_STAINED_GLASS_PANE
+      name: " "
+      # -1 means all slots will be filled with this item.
+      slot: -1
+    2:
+      # !! Item will be replaced with : guild-gui-item : Which is listed above
+      slot: 11
+      type: "Guild"
+    3:
+      slot: 12
+      type: "Guild"
+    4:
+      slot: 13
+      type: "Guild"
+    5:
+      slot: 14
+      type: "Guild"
+    6:
+      slot: 15
+      type: "Guild"
+    7:
+      slot: 16
+      type: "Guild"
+    8:
+      slot: 17
+      type: "Guild"
+    9:
+      slot: 20
+      type: "Guild"
+    10:
+      slot: 21
+      type: "Guild"
+    11:
+      slot: 22
+      type: "Guild"
+    12:
+      slot: 23
+      type: "Guild"
+    13:
+      slot: 24
+      type: "Guild"
+    14:
+      slot: 25
+      type: "Guild"
+    15:
+      slot: 26
+      type: "Guild"
+    16:
+      slot: 29
+      type: "Guild"
+    17:
+      slot: 30
+      type: "Guild"
+    18:
+      slot: 31
+      type: "Guild"
+    19:
+      slot: 32
+      type: "Guild"
+    20:
+      slot: 33
+      type: "Guild"
+    21:
+      slot: 34
+      type: "Guild"
+    22:
+      slot: 35
+      type: "Guild"
+    23:
+      slot: 38
+      type: "Guild"
+    24:
+      slot: 39
+      type: "Guild"
+    25:
+      slot: 40
+      type: "Guild"
+    26:
+      slot: 41
+      type: "Guild"
+    27:
+      slot: 42
+      type: "Guild"
+    28:
+      slot: 43
+      type: "Guild"
+    29:
+      slot: 44
+      type: "Guild"
+    30:
+      item: OAK_SIGN
+      name: "&eSearch"
+      item-flags:
+        - "HIDE_ATTRIBUTES"
+        - "HIDE_ENCHANTS"
+      slot: 46
+      type: "Search"
+    31:
+      item: ARROW
+      name: "&7← Go back"
+      item-flags:
+        - "HIDE_ATTRIBUTES"
+        - "HIDE_ENCHANTS"
+      slot: 48
+      type: "GoBack"
+    32 :
+      item: BARRIER
+      name: "&cClose"
+      item-flags:
+        - "HIDE_ATTRIBUTES"
+        - "HIDE_ENCHANTS"
+      slot: 50
+      type: "Close"
+    33:
+      item: ARROW
+      name: "&7→ Go Forward"
+      item-flags:
+        - "HIDE_ATTRIBUTES"
+        - "HIDE_ENCHANTS"
+      slot: 52
+      type: "GoForward"
+    34:
+      item: REDSTONE_TORCH
+      name: "&eCurrent Guild"
+      # Will follow the lore from the item : guild-gui-item : Which is listed above
+      item-flags:
+        - "HIDE_ATTRIBUTES"
+        - "HIDE_ENCHANTS"
+      slot: 54
+      type: "Information"
